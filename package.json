@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-intrinio",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Intrinio MCP — premium financial data (intrinio.com)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-intrinio": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "intrinio"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-intrinio.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/intrinio",
   "pipeworx": {
-    "sourceHash": "v1-5d334e4724481581037fbfdf44a3d4db0409f35ec4373715070b1b6203893b6c",
-    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
+    "mode": "gateway",
+    "slug": "intrinio",
+    "gatewaySlug": "intrinio",
+    "sourceHash": "v1-242c973ec1b18c0a2eb18117afe283011380a291f6006b5d2da74b5c9379a6fa",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
