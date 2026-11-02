@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-intrinio",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Intrinio MCP — premium financial data (intrinio.com)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "intrinio",
     "gatewaySlug": "intrinio",
-    "sourceHash": "v1-242c973ec1b18c0a2eb18117afe283011380a291f6006b5d2da74b5c9379a6fa",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-6d38da711835245ad73f507da774bf31004c239bf07189db5ee563989e835ee3",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
